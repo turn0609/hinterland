@@ -1,0 +1,459 @@
+
+/*Fonts*/
+		@font-face {
+			font-family: 'NanumExtraBold';
+			src: url(../fonts/NanumMyeongjo-ExtraBold.ttf);
+			font-weight: 100%;
+		}
+
+		@font-face {
+			font-family: 'NewRocker';
+			src: url(../fonts/NewRocker-Regular.ttf);
+			font-weight: 100%;
+		}
+
+/*Logo Text*/
+		h1 {
+			font-size: 100px;
+			line-height: 120px;
+			color: #FBFBEA;
+			font-family: 'NewRocker';
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			transform: translate(-50%, -75%);
+		}
+
+/*Logo Dates*/
+		h2 {
+			font-size: 30px;
+			line-height: 36px;
+			width: 500px;
+			color: #FBFBEA;
+			font-family: 'NanumExtraBold';
+			position: absolute;
+			left: 50%;
+			top: 70%;
+			transform: translate(-50%, -15%);
+		}
+
+/*Button and Header Text*/
+		h3 {
+			font-family: 'NanumExtraBold';
+			font-size: 30px;
+			text-decoration: none;
+			color: #28251D;
+			display: block;
+		}
+
+/*Body Text*/
+		h4 {
+			font-family: 'NanumExtraBold';
+			font-size: 20px;
+			color: #28251D;
+			display: block;
+		}
+
+/*Footer text*/
+		h5 {
+			font-family: 'NanumExtraBold';
+			font-size: 30px;
+			text-decoration: none;
+			color: #FBFBEA;
+			display: block;
+		}
+
+/*Link Text*/
+		a {
+			text-decoration: none;
+			color: #28251D;
+		}	
+
+/*HTML Body*/
+
+		body {
+			position: relative;
+			background: linear-gradient(to right, #92C4D7, #FBFBEA);
+		}
+
+		section {
+			position: relative;
+			z-index: -100;
+		}
+
+		.container {
+			width: 100vw;
+			height: auto;
+			background-color: #C8DFE0;
+			position: relative;
+		}
+
+/*Header and footer*/
+
+		.header {
+			position: absolute;
+			width: 100%;
+			top: 64px;
+			height: 224px;
+			background-image: url(../images/hinterlandheader.jpeg);
+		}
+
+		.footer {
+			position: absolute;
+			width: 100vw;
+			height: 536px;
+			top: 2350px;
+			background-image: url(../images/hinterfooter.jpg);
+			z-index: 1;
+		}
+
+		#footertext {
+			text-align: center;
+			line-height: 84px;
+			margin-top: 10px;
+		}
+
+		.subscribe {
+			width: 472px;
+			height: 88px;
+			position: relative;
+			left: 50%;
+			transform: translate(-50%);
+			background-color: #92C4D7;
+			transition: 0.5s;
+		}
+
+		.subscribe:hover {
+			color: black;
+			transition: 0.5s;
+		}
+
+/*Footer Social Links*/
+
+		.socials {
+			margin-left: 10vw;
+			margin-right: 10vw;
+			height: 100px;
+			display: flex;
+		    justify-content: space-between; 
+		    align-items: center;
+		    width: 80vw; 
+		    gap: 20px;
+		}
+
+		.spotify {
+			background-image: url(../images/spotify.png);
+			height: 64px;
+			width: 64px;
+			position: relative;
+		}
+
+		.instagram {
+			background-image: url(../images/instagram.png);
+			height: 64px;
+			width: 64px;
+			position: relative;
+		}
+
+		.tiktok {
+			background-image: url(../images/tiktok.png);
+			height: 64px;
+			width: 64px;
+			position: relative;
+
+		}
+
+		.facebook {
+			background-image: url(../images/facebook.png);
+			height: 64px;
+			width: 64px;
+			position: relative;
+		}
+
+		.x {
+			background-image: url(../images/x.png);
+			height: 64px;
+			width: 64px;
+			position: relative;
+		}
+
+/*Nav Bar*/
+
+		.test {
+			width: 100%;
+			line-height: 64px;
+			top: 0px;
+			border-bottom: 4px solid #C7DFE0;
+			position: fixed;
+
+			font-family: 'NanumExtraBold';
+			text-align: center;
+			z-index: 1000;
+			background: linear-gradient(to right, #92C4D7, #FBFBEA);
+		}
+
+		.navigation {
+			opacity: 0;
+		}
+
+		.nav {
+			text-decoration: none;
+			color: #28251D;
+			margin-right: 5vw;
+			margin-left: 5vw;
+			transition: 0.3s;	
+		}
+
+		#nav:hover {
+			color: gray;
+			transition: 0.3s;
+		}
+
+
+/* Homepage Margins*/
+		.homemarginright {
+			position: absolute;
+			top: 64px;
+			right: 0;
+			width: 10vw;
+			height: 2500px;
+			z-index: -50;
+			background-image: url(../images/MarginUnit.png);
+			background-size: contain;
+			border-left: #C7DFE0 solid 4px;
+
+		}
+
+		.homemarginleft {
+			position: absolute;
+			top: 64px;
+			left: 0;
+			width: 10vw;
+			height: 2500px;
+			z-index: -50;
+			background-image: url(../images/MarginUnit.png);
+			background-size: contain;
+			border-right: #C7DFE0 solid 4px;
+		}
+
+/*Home Page Content*/
+
+		.homeintrotext {
+			height: 150px;
+			width: 70vw;
+			position: absolute;
+			top: 260px;
+			left: 15vw;
+		}
+
+		.homebodytext {
+			height: 300px;
+			width: 70vw;
+			position: absolute;
+			top: 1075px;
+			left: 15vw;
+
+		}
+
+		.lineup {
+			background-image: url(../images/lineup.png);
+			background-size: contain;
+			width: 800px;
+			height: 1000px;
+			position: absolute;
+			top: 1225px;
+			left: 50%;
+			transform: translate(-50%);
+		}
+
+/*Hero Image*/
+
+		.heroimage {
+			background-image: url(../images/heroimage.jpeg);
+			background-size: cover;
+			width: 70vw;
+			height: 600px;
+			position: absolute;
+			top: 425px;
+			left: 15vw;
+		}
+
+		.buytickets {
+		 	width: 400px;
+		 	height: 100px;
+		 	position: absolute;
+		 	bottom: 100px;
+		 	left: 50%;
+			transform: translate(-50%);
+		 	background-color: white;
+		 	z-index: 1;
+		 	text-align: center;
+		 	line-height: 100px;
+		 	transition: 0.5s;
+		}
+
+		.buytickets:hover {
+			background-color: gray;
+			transition: 0.5s;
+		}
+
+
+
+/*HISTORY PAGE footer and margins!!!*/
+
+		.footerhistory {
+			position: absolute;
+			width: 100vw;
+			height: 536px;
+			top: 7000px;
+			background-image: url(../images/hinterfooter.jpg);
+			z-index: 1;
+		}
+
+		.homemarginrighthistory {
+			position: absolute;
+			top: 64px;
+			right: 0;
+			width: 10vw;
+			height: 7000px;
+			z-index: -50;
+			background-image: url(../images/MarginUnit.png);
+			background-size: contain;
+			border-left: #C7DFE0 solid 4px;
+
+		}
+
+		.homemarginlefthistory {
+			position: absolute;
+			top: 64px;
+			left: 0;
+			width: 10vw;
+			height: 7000px;
+			z-index: -50;
+			background-image: url(../images/MarginUnit.png);
+			background-size: contain;
+			border-right: #C7DFE0 solid 4px;
+		}
+
+/*History Page Lineup Units*/
+
+		.historyblock {
+			position: relative;
+			width: 70vw;
+			height:fit-content;
+		/*	border: black 1px solid;*/
+			left: 15vw;
+			top: 260px;
+			margin-bottom: 75px;
+		}
+
+		#historyyear {
+			text-align: center;
+			height: 72px;
+		}
+
+		#historyheadliners {
+			text-align: center;
+			height: 72px;
+		}
+
+/*History Images*/
+
+		.history2023 {
+			background-size: cover;
+			background-image: url(../images/2023.png);
+			width: 70vw;
+			height: 500px;
+			margin-top: 20px;
+			margin-bottom: 10px;
+		}
+
+		.history2022 {
+			background-size: cover;
+			background-image: url(../images/2022.png);
+			width: 70vw;
+			height: 500px;
+			margin-top: 20px;
+			margin-bottom: 10px;
+		}
+
+		.history2021 {
+			background-size: cover;
+			background-image: url(../images/2021.png);
+			width: 70vw;
+			height: 500px;
+			margin-top: 20px;
+			margin-bottom: 10px;
+		}
+
+		.history2019 {
+			background-size: cover;
+			background-image: url(../images/2019.png);
+			background-position: bottom;
+			width: 70vw;
+			height: 500px;
+			margin-top: 20px;
+			margin-bottom: 10px;
+		}
+
+		.history2018 {
+			background-size: cover;
+			background-image: url(../images/2018.png);
+			background-position: bottom;
+			width: 70vw;
+			height: 500px;
+			margin-top: 20px;
+			margin-bottom: 10px;
+		}
+
+		.history2017 {
+			background-size: cover;
+			background-image: url(../images/2017.png);
+			background-position: bottom;
+			width: 70vw;
+			height: 500px;
+			margin-top: 20px;
+			margin-bottom: 10px;
+		}
+
+		.history2016 {
+			background-size: cover;
+			background-image: url(../images/2016.png);
+			width: 70vw;
+			height: 500px;
+			margin-top: 20px;
+			margin-bottom: 10px;
+		}
+
+		.history2015 {
+			background-size: cover;
+			background-image: url(../images/2015.png);
+			background-position: bottom;
+			width: 70vw;
+			height: 500px;
+			margin-top: 20px;
+			margin-bottom: 10px;
+		}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
